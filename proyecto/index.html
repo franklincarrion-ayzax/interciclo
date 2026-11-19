@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Computing</title>
+  <style>
+:root{--ink:#12324a;--mid:#4f7ca3;--acc:#e08a1e;--bg:#f6f9fb;--card:#fff;--line:#d5e2ec}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;line-height:1.65;color:var(--ink);background:var(--bg)}
+header{background:var(--ink);color:#fff}
+.barra{max-width:980px;margin:0 auto;padding:18px 20px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+.marca{font-size:1.15rem;font-weight:bold}
+nav{display:flex;gap:6px}
+nav a{color:#fff;text-decoration:none;padding:8px 14px;border-radius:4px;font-family:Arial,sans-serif;font-size:.95rem}
+nav a:hover{background:rgba(255,255,255,.15)}
+nav a.activo{background:var(--acc);color:#1b1b1b;font-weight:bold}
+nav a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+main{max-width:980px;margin:0 auto;padding:32px 20px 48px}
+h1{font-size:2.1rem;margin:0 0 8px}
+.intro{max-width:70ch;margin:0 0 32px;color:#355a75}
+section.tema{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:24px;margin-bottom:22px}
+section.tema:nth-of-type(even) img{order:-1}
+section.tema h2{margin:0 0 8px;font-size:1.4rem}
+section.tema p{margin:0;max-width:60ch}
+img{width:100%;height:auto;border-radius:6px;display:block}
+footer{max-width:980px;margin:0 auto;padding:0 20px 32px;font-family:Arial,sans-serif;font-size:.85rem;color:#5b7a91}
+@media (max-width:720px){section.tema{grid-template-columns:1fr}section.tema:nth-of-type(even) img{order:0}}
+</style>
+</head>
+<body>
+  <header>
+    <div class="barra">
+      <span class="marca">Cloud Computing M3A</span>
+      <nav aria-label="Menú principal">
+        <a href="index.html" class="activo" aria-current="page">Cloud Computing</a>
+        <a href="conexion-remota.html">Conexión remota</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Cloud Computing</h1>
+    <p class="intro">Conceptos básicos de la computación en la nube, sus modelos de servicio y las tecnologías que la hacen posible.</p>
+    <section class="tema">
+      <div>
+        <h2>Cloud Computing</h2>
+        <p>Modelo que ofrece recursos informáticos (servidores, almacenamiento, bases de datos, redes y software) a través de Internet, bajo demanda y con pago por uso. Evita comprar y mantener infraestructura propia y permite escalar los recursos según la necesidad.</p>
+      </div>
+      <img src="img/cloud.png" alt="Equipos de usuarios conectados a una nube a través de Internet">
+    </section>
+    <section class="tema">
+      <div>
+        <h2>SaaS: Software como Servicio</h2>
+        <p>El proveedor entrega aplicaciones listas para usar desde el navegador y se encarga de toda la infraestructura, la plataforma y las actualizaciones. El usuario solo usa el servicio. Ejemplos: Gmail, Microsoft 365, Google Docs.</p>
+      </div>
+      <img src="img/saas.png" alt="Esquema de capas del modelo SaaS gestionado por el proveedor">
+    </section>
+    <section class="tema">
+      <div>
+        <h2>PaaS: Plataforma como Servicio</h2>
+        <p>El proveedor ofrece un entorno para desarrollar, probar y desplegar aplicaciones sin administrar servidores ni sistemas operativos. El cliente gestiona su código y sus datos. Ejemplos: Google App Engine, Azure App Service, Heroku.</p>
+      </div>
+      <img src="img/paas.png" alt="Esquema de capas del modelo PaaS, con aplicaciones y datos a cargo del cliente">
+    </section>
+    <section class="tema">
+      <div>
+        <h2>IaaS: Infraestructura como Servicio</h2>
+        <p>El proveedor entrega recursos básicos de cómputo, almacenamiento y red, normalmente como máquinas virtuales. El cliente instala y administra el sistema operativo, el middleware y las aplicaciones. Ejemplos: Amazon EC2, Azure Virtual Machines, Google Compute Engine.</p>
+      </div>
+      <img src="img/iaas.png" alt="Esquema de capas del modelo IaaS, con la virtualización a cargo del proveedor">
+    </section>
+    <section class="tema">
+      <div>
+        <h2>Virtualización</h2>
+        <p>Tecnología que permite ejecutar varios sistemas operativos independientes sobre un mismo equipo físico mediante un hipervisor, que reparte CPU, memoria, disco y red entre las máquinas virtuales. Es la base de la nube porque permite aprovechar mejor el hardware y aislar los servicios.</p>
+      </div>
+      <img src="img/virtualizacion.png" alt="Máquinas virtuales sobre un hipervisor y hardware físico">
+    </section>
+    <section class="tema">
+      <div>
+        <h2>Docker</h2>
+        <p>Plataforma que empaqueta una aplicación con sus dependencias en una imagen y la ejecuta en contenedores. Los contenedores comparten el kernel del sistema anfitrión, por lo que son más ligeros y rápidos de iniciar que una máquina virtual, y funcionan igual en cualquier entorno.</p>
+      </div>
+      <img src="img/docker.png" alt="Contenedores ejecutándose sobre Docker Engine y el sistema anfitrión">
+    </section>
+  </main>
+  <footer>Examen interciclo práctico, Tecnología Superior en Administración de Infraestructura y Plataformas Tecnológicas, UCuenca TEC.</footer>
+</body>
+</html>
