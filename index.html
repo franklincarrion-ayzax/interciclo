@@ -3,43 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Tecnologías Cloud y Acceso Remoto</title>
+    <title>Cloud Computing</title>
     <style>
+        /* estilos base del sitio */
         body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f9; color: #222; }
         nav { background: #1e293b; padding: 15px; text-align: center; }
         nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; padding: 8px 14px; border-radius: 5px; }
         nav a.activo { background: #2563eb; }
-        .contenedor { max-width: 900px; margin: 40px auto; padding: 0 20px; text-align: center; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); text-align: left; }
-        .btn { display: inline-block; margin-top: 15px; background: #2563eb; color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 5px; font-weight: bold; }
+        .contenedor { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+        .tarjeta { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+        .tarjeta img { max-width: 100%; height: auto; display: block; margin-top: 12px; border-radius: 6px; }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html" class="activo">Inicio</a>
-        <a href="cloud.html">Cloud Computing</a>
-        <a href="remoto.html">Conexión Remota</a>
+        <a href="index.html" class="activo">Cloud Computing</a>
+        <a href="remoto.html">Conexión remota</a>
     </nav>
 
     <div class="contenedor">
-        <h1>Portal de Tecnologías en la Nube y Acceso Remoto</h1>
-        <p>Selecciona una de las dos secciones para explorar los conceptos e ilustraciones correspondientes.</p>
+        <h1>Cloud Computing</h1>
 
-        <div class="grid">
-            <div class="card">
-                <h2>1. Cloud Computing</h2>
-                <p>Conceptos e imágenes sobre computación en la nube, modelos SaaS, PaaS, IaaS, virtualización y contenedores Docker.</p>
-                <a href="cloud.html" class="btn">Ir a Cloud Computing</a>
-            </div>
+        <section class="tarjeta">
+            <h2>Cloud Computing</h2>
+            <p>Modelo que permite acceder bajo demanda a través de Internet a un conjunto compartido de recursos informáticos configurables (servidores, almacenamiento, redes y servicios) de forma rápida y escalable.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cloud_computing.svg/640px-Cloud_computing.svg.png" alt="Diagrama de Cloud Computing">
+        </section>
 
-            <div class="card">
-                <h2>2. Conexión Remota</h2>
-                <p>Conceptos e imágenes de herramientas de escritorio y soporte remoto: AnyDesk y TeamViewer.</p>
-                <a href="remoto.html" class="btn">Ir a Conexión Remota</a>
-            </div>
-        </div>
+        <section class="tarjeta">
+            <h2>SaaS (Software as a Service)</h2>
+            <p>Modelo en el que las aplicaciones son alojadas y mantenidas por el proveedor en la nube y se utilizan normalmente desde un navegador web sin administrar la infraestructura subyacente.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cloud_computing_layers.svg/640px-Cloud_computing_layers.svg.png" alt="Modelo de servicio SaaS">
+        </section>
+
+        <section class="tarjeta">
+            <h2>PaaS (Platform as a Service)</h2>
+            <p>Entorno en la nube que ofrece plataformas, herramientas, librerías y tiempos de ejecución listos para desarrollar, probar y desplegar aplicaciones sin gestionar servidores ni sistemas operativos base.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cloud_computing_layers.svg/640px-Cloud_computing_layers.svg.png" alt="Modelo de servicio PaaS">
+        </section>
+
+        <section class="tarjeta">
+            <h2>IaaS (Infrastructure as a Service)</h2>
+            <p>Provisión de recursos de infraestructura virtualizados por Internet (máquinas virtuales, almacenamiento y redes) donde el usuario administra el sistema operativo y sus aplicaciones.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Cloud_computing_layers.svg/640px-Cloud_computing_layers.svg.png" alt="Modelo de servicio IaaS">
+        </section>
+
+        <section class="tarjeta">
+            <h2>Virtualización</h2>
+            <p>Tecnología que mediante un hipervisor crea versiones virtuales de hardware para ejecutar múltiples sistemas operativos aislados sobre un mismo equipo físico.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hypervisor_type_1_and_type_2.svg/640px-Hypervisor_type_1_and_type_2.svg.png" alt="Arquitectura de virtualización">
+        </section>
+
+        <section class="tarjeta">
+            <h2>Docker</h2>
+            <p>Plataforma que empaqueta aplicaciones y sus dependencias en contenedores ligeros y portables que comparten el kernel del sistema operativo anfitrión.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/640px-Docker_%28container_engine%29_logo.svg.png" alt="Logo de Docker">
+        </section>
     </div>
 
 </body>
